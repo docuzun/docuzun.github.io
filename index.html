@@ -147,8 +147,24 @@
   }
 </style>
   </head>
-  <body class="text-dark antialiased bg-white font-sans flex flex-col min-h-screen">
+x<body class="text-dark antialiased bg-white font-sans flex flex-col min-h-screen overflow-hidden">
+    <!-- STARTSEITE / SPLASH (GANZE SEITE KLICKBAR) -->
+<div
+  id="splash"
+  class="fixed inset-0 z-[9999] flex items-center justify-center cursor-pointer"
+  style="background: radial-gradient(circle at center, #ff6a13 0%, #ff6a13 100%);"
+>
+  <div class="text-center px-6">
+    <img
+      src="animation_doc_uzun.gif"
+      alt="Doc Uzun HolzwickedeBochum"
+      class="w-[95vw] max-w-[800px] mx-auto "
+    />
+    
+  </div>
+</div>
 
+  
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm py-3">
       <div class="container mx-auto px-6 flex justify-between items-center">
         
@@ -614,6 +630,25 @@
           mapContainer.innerHTML = mapIframeHTML;
         }
       }
+const splash = document.getElementById("splash");
+
+  function hideSplash() {
+    if (!splash) return;
+
+    splash.classList.add("opacity-0", "transition-opacity", "duration-300");
+
+    setTimeout(() => {
+      splash.remove();
+      document.body.classList.remove("overflow-hidden");
+    }, 300);
+  }
+
+  // GANZE SEITE KLICKBAR
+  splash.addEventListener("click", hideSplash);
+
+  // AUTOMATISCH NACH X SEKUNDEN (hier 3.5 Sekunden)
+  setTimeout(hideSplash,5000);
+      
     </script>
   </body>
 </html>
