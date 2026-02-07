@@ -132,16 +132,20 @@
     </script>
 
     <style>
-      .hero-bg {
-        background-image: url('hero2.png'); 
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-      }
-      #cookie-banner {
-        display: none; 
-      }
-    </style>
+  .hero-bg {
+    background-image: url('hero2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* Mobile Fix */
+  @media (max-width: 1024px) {
+    .hero-bg {
+      background-attachment: scroll;
+    }
+  }
+</style>
   </head>
   <body class="text-dark antialiased bg-white font-sans flex flex-col min-h-screen">
 
