@@ -444,40 +444,203 @@ x<body class="text-dark antialiased bg-white font-sans flex flex-col min-h-scree
     </section>
 
     <section id="team" class="py-24 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col items-center">
-            <div class="w-full max-w-4xl bg-light rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 shadow-soft">
-                <div class="shrink-0 w-full md:w-56">
-    <div class="aspect-[4/5] w-full bg-white rounded-xl shadow-lg overflow-hidden">
-        <img
-            src="dr_akin_uzun.png"
-            alt="Dr. med. Akin Uzun – Facharzt für Orthopädie und Unfallchirurgie"
-            class="w-full h-full object-cover"
-            loading="lazy"
-        />
-    </div>
-</div>
-                <div class="text-center md:text-left">
-                    <h2 class="text-3xl font-bold text-primary mb-2">Dr. med. Akin Uzun</h2>
-                    <p class="text-secondary font-bold uppercase tracking-wider text-xs mb-1">Facharzt für Orthopädie & Unfallchirurgie</p>
-                    <p class="text-secondary font-bold uppercase tracking-wider text-xs mb-4">Facharzt für spezielle Unfallchirurgie</p>
-                    
-                    <p class="text-dark/70 italic mb-6">
-                        "Jeder Patient ist einzigartig. Deshalb ist es mir wichtig, Diagnosen verständlich zu erklären und gemeinsam den besten Therapieweg zu finden."
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col items-center">
+      <div class="w-full max-w-4xl bg-light rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-start gap-10 shadow-soft">
+
+        <!-- Bild -->
+        <div class="shrink-0 w-full md:w-56">
+          <div class="aspect-[4/5] w-full bg-white rounded-xl shadow-lg overflow-hidden">
+            <img
+              src="dr_akin_uzun.png"
+              alt="Dr. med. Akin Uzun – Facharzt für Orthopädie und Unfallchirurgie"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="text-center md:text-left flex-1">
+          <h2 class="text-3xl font-bold text-primary mb-2">Dr. med. Akin Uzun</h2>
+
+          <p class="text-secondary font-bold uppercase tracking-wider text-xs mb-1">
+            Facharzt für Orthopädie & Unfallchirurgie
+          </p>
+          <p class="text-secondary font-bold uppercase tracking-wider text-xs mb-4">
+            Facharzt für spezielle Unfallchirurgie
+          </p>
+
+          <p class="text-dark/70 italic mb-6">
+            "Jeder Patient ist einzigartig. Deshalb ist es mir wichtig, Diagnosen verständlich zu erklären und gemeinsam den besten Therapieweg zu finden."
+          </p>
+
+          <p class="text-primary font-bold uppercase tracking-wider text-xs mb-4">
+            Zusatzbezeichnungen
+          </p>
+
+          <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+            <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Akupunktur</span>
+            <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Manuelle Therapie</span>
+            <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Physikalische Therapie und Balneologie</span>
+            <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Notfallmedizin</span>
+            <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Osteoporose Experte (DVO)</span>
+          </div>
+
+          <!-- Werdegang -->
+          <div class="mt-8">
+            <details class="group border border-gray-200 rounded-lg bg-white p-1">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-bold text-primary"
+              >
+                Werdegang
+
+                <span class="relative h-4 w-4 shrink-0">
+                  <!-- Horizontal -->
+                  <span
+                    class="absolute left-0 top-1/2 h-[1.5px] w-4 -translate-y-1/2 bg-primary"
+                  ></span>
+                  <!-- Vertical -->
+                  <span
+                    class="absolute left-1/2 top-0 h-4 w-[1.5px] -translate-x-1/2 bg-primary transition-opacity duration-200 group-open:opacity-0"
+                  ></span>
+                </span>
+              </summary>
+
+              <!-- Werdegang Liste (ohne Punkte & ohne Linie) -->
+              <div class="mt-6 space-y-6">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      Seit 2025
                     </p>
-                    <p class="text-primary font-bold uppercase tracking-wider text-xs mb-4">Zusatzbezeichnungen</p>
-                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
-                        <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Akupunktur</span>
-                        <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Manuelle Therapie</span>
-                        <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Physikalische Therapie und Balneologie</span>
-                        <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Notfallmedizin</span>
-                        <span class="px-3 py-1 bg-white border border-gray-200 rounded text-xs text-gray-500">Osteoporose Experte (DVO)</span>
-                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">
+                      Niedergelassen in eigener Praxis
+                    </p>
+                    <p class="text-sm text-gray-600">
+                      Praxis für Orthopädie & Unfallchirurgie
+                    </p>
+                  </div>
                 </div>
-            </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      07/2024 – 12/2024
+                    </p>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">Angestellter Arzt</p>
+                    <p class="text-sm text-gray-600">Praxis Dr. Petschulat</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      04/2019 – 06/2024
+                    </p>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">Leitender Oberarzt</p>
+                    <p class="text-sm text-gray-600">
+                      Knappschaftskrankenhaus Recklinghausen
+                    </p>
+                    <p class="text-sm text-gray-600">
+                      Klinik für Unfallchirurgie, Handchirurgie und Sporttraumatologie
+                    </p>
+                    <p class="text-sm text-gray-600">Prof. Dr. M. Tezval</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      02/2015 – 03/2019
+                    </p>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">Oberarzt</p>
+                    <p class="text-sm text-gray-600">Knappschaftskrankenhaus Bochum</p>
+                    <p class="text-sm text-gray-600">
+                      Klinik für Orthopädie und Unfallchirurgie
+                    </p>
+                    <p class="text-sm text-gray-600">Prof. Dr. R. Smektala</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      05/2012 – 01/2015
+                    </p>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">Assistenzarzt</p>
+                    <p class="text-sm text-gray-600">Knappschaftskrankenhaus Bochum</p>
+                    <p class="text-sm text-gray-600">
+                      Klinik für Orthopädie und Unfallchirurgie
+                    </p>
+                    <p class="text-sm text-gray-600">Prof. Dr. R. Smektala</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      05/2011 – 04/2012
+                    </p>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">Assistenzarzt</p>
+                    <p class="text-sm text-gray-600">Orthopädische Klinik Volmarstein</p>
+                    <p class="text-sm text-gray-600">Dr. M. Gansel</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      01/2011 – 04/2011
+                    </p>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">Assistenzarzt</p>
+                    <p class="text-sm text-gray-600">Knappschaftskrankenhaus Bochum</p>
+                    <p class="text-sm text-gray-600">
+                      Klinik für Orthopädie und Unfallchirurgie
+                    </p>
+                    <p class="text-sm text-gray-600">Prof. Dr. R. Smektala</p>
+                  </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+                  <div class="sm:w-40 shrink-0">
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      01/2009 – 12/2010
+                    </p>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-semibold text-gray-800">Assistenzarzt</p>
+                    <p class="text-sm text-gray-600">
+                      Uniklinik Knappschaftskrankenhaus Bochum
+                    </p>
+                    <p class="text-sm text-gray-600">
+                      Klinik für Allgemeinchirurgie
+                    </p>
+                    <p class="text-sm text-gray-600">Prof. Dr. R. Viebahn</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section id="contact" class="flex flex-col lg:flex-row min-h-[550px]">
       
